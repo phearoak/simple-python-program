@@ -1,6 +1,0 @@
-projectKey=code-maintenance
-serverUrl=http://localhost:9000
-serverVersion=10.5.1.90531
-dashboardUrl=http://localhost:9000/dashboard?id=code-maintenance
-ceTaskId=1b03da51-1f4d-4e35-851b-805f8f07314b
-ceTaskUrl=http://localhost:9000/api/ce/task?id=1b03da51-1f4d-4e35-851b-805f8f07314b
