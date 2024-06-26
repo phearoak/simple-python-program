@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import sys
+
 # Programme pour calculer des statistiques simples sur une liste de nombres
 
 # Calcule la somme des nombres dans une liste donnée
@@ -47,9 +49,16 @@ def calculate_statistique(numbers):
     print("Max: ", max(numbers))
     print("Min: ", min(numbers))
 
+# Vérifie si la liste des arguments contient uniquement des nombres
+def check_input(data):
+    for i in data:
+        if not i.isnumeric():
+            print("Please enter only numbers")
+            sys.exit(1)
 
 def main():
-    data = [4, 8, 15, 16, 23, 42]
+    data = sys.argv[1:]
+    check_input(data)
     calculate_statistique(data)
 
 if __name__ == '__main__':
